@@ -5,36 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tag
-  -->
   <title>EduWeb - The Best Program to Enroll for Exchange</title>
   <meta name="title" content="EduWeb - The Best Program to Enroll for Exchange">
   <meta name="description" content="This is an education html template made by codewithsadee">
 
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
     rel="stylesheet">
 
-  <!-- 
-    - preload images
-  -->
   <link rel="preload" as="image" href="hero-bg.svg">
   <link rel="preload" as="image" href="hero-banner-1.jpg">
   <link rel="preload" as="image" href="hero-banner-2.jpg">
@@ -45,9 +29,6 @@
 
 <body id="top">
 
-  <!-- 
-    - #HEADER
-  -->
 
   <header class="header" data-header>
     <div class="container">
@@ -103,13 +84,7 @@
           <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <!-- <button class="header-action-btn" aria-label="cart" title="Cart">
-          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
-
-          <span class="btn-badge">0</span>
-        </button> -->
-
-        <a  class="btn has-before" href="https://karangulve4342.github.io/karan_sih2.github.io/">
+        <a  class="btn has-before" href="https://karangulve4342.github.io/Login-Signup-Page/">
           <span class="span" >Premium</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -133,10 +108,6 @@
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
-
       <section class="section hero has-bg-image" id="home" aria-label="home"
         style="background-image: url('hero-bg.svg')">
         <div class="container">
@@ -146,9 +117,11 @@
             <h1 class="h1 section-title">
               Connecting Cultures,<span class="span"><strong> One Word</strong></span> at a Time
             </h1>
+            
 
             <p class="hero-text">
-              Platform for English to Indian regional Language Translation
+              
+              <span id="element"></span>
             </p>
 
             <a href="#" class="btn has-before">
@@ -177,14 +150,15 @@
 
         </div>
       </section>
-
       
-
-
-
-      <!-- 
-        - #CATEGORY
-      -->
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+          var typed = new Typed('#element', {
+              strings: ['Platform for English to Indian regional Language Translation'],
+              typeSpeed: 50,
+          });
+      </script>
+      
 
       <section class="section category" aria-label="category">
         <div class="container">
@@ -196,32 +170,8 @@
           </h2>
 
           <p class="section-text">
-            Consectetur adipiscing elit sed do eiusmod tempor.
+            How Worlds Unite in Words.
           </p>
-
-          <!-- <ul class="grid-list">
-
-            <li>
-              <div class="category-card" style="--color: 500, 75%, 41%">
-
-                <div class="card-icon">
-                  <img src="—Pngtree—upload cloud vector icon_3876265.png" width="40" height="40" loading="lazy"
-                    alt="Online Degree Programs" class="img">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Online Degree Programs</a>
-                </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
-                </p>
-
-                <button class="btn"><span class="card-badge">Browse</span></button>
-
-              </div>
-            </li> -->
-
             <li> 
               <div class="category-card card1" style="--color: 500, 75%, 41%">
                 <div class="ocr">
@@ -229,49 +179,13 @@
                   <h2 class="message"></h2>
                   <span class="h2">Input Text here!</span>
                 </div>
-                <!-- <div class="card-icon">
-                  <img src="—Pngtree—upload cloud vector icon_3876265.png" width="40" height="40" loading="lazy"
-                    alt="Non-Degree Programs" class="img">
-                </div> -->
 
                 <div class="ocr">
-                  <!-- <h1>Image And PDF OCR Tool</h1>
-                  <h2 class="message"></h2>
-                  <span>Select a File</span> -->
-                  <!-- <input type="file" class="file">
-                  <button class="btn1"><strong>Perform OCR</strong></button>
-                  <span>Result Text</span> -->
-                  <textarea class="texttext"></textarea>
+              <textarea class="texttext" style="font-family: 'Comic Sans MS', cursive; color: black; background-color: white; font-size: large;"
+                  class="w-11/12 md:h-2/3 m-2 p-2 border-blue-900 rounded-lg border self-center justify-center"
+                  name="data" id="data" cols="30" rows="10" placeholder="Enter your text" required="required"></textarea>
               </div>
-              <script>
-              //     let api = "https://script.google.com/macros/s/AKfycby2EVLP-OcmMU0SUu1rkSMLwhkiW762tvRd7caRiaCXSUsf0B8mimAvXd_-JY7KN9zS/exec";
-              //     let msg = document.querySelector(".message");
-              //     let file = document.querySelector(".file");
-              //     let btn1 = document.querySelector(".btn1");
-              //     let text = document.querySelector(".texttext");
-              //     btn1.addEventListener('click',()=>{
-              //         msg.innerHTML="Loading..";
-              //         let fr = new FileReader();
-              //         fr.readAsDataURL(file.files[0])
-              //         fr.onload=()=>{
-              //             let res = fr.result;
-              //             let b64 = res.split("base64,")[1];
-              //             fetch(api,{
-              //                 method:"POST",
-              //                 body:JSON.stringify({
-              //                     file:b64,
-              //                     type:file.files[0].type,
-              //                     name:file.files[0].name
-              //                 })
-              //             })
-              //               .then(res => res.text())
-              //               .then(data => {
-              //                 text.innerHTML=data;
-              //                 msg.innerHTML=``;
-              //               });
-              //         }
-              //     })
-              // </script>
+              
                 <style>
                   
                   .ocr .btn1{
@@ -315,53 +229,6 @@
               </div>
             </li>
 
-            <!-- <li>
-              <div class="category-card" style="--color: 229, 75%, 58%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
-                    alt="Off-Campus Programs" class="img">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Off-Campus Programs</a>
-                </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
-                </p>
-
-                <span class="card-badge">8 Courses</span>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card" style="--color: 42, 94%, 55%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/category-4.svg" width="40" height="40" loading="lazy"
-                    alt="Hybrid Distance Programs" class="img">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Hybrid Distance Programs</a>
-                </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
-                </p>
-
-                <span class="card-badge">8 Courses</span>
-
-              </div>
-            </li> -->
-
-          <!-- </ul> -->
-          <div>
-            
-          </div>
-
         </div>
       </section>
       <section>
@@ -370,8 +237,6 @@
             <ul class="controls">
               <li class="row from">
                 <div class="icons">
-                  <!-- <ion-icon id="from" name="volume-medium-outline"></ion-icon>
-                  <ion-icon id="from" name="copy-outline"></ion-icon> -->
                 </div>
                 <select class="sel"></select>
               </li>
@@ -380,26 +245,11 @@
               <li class="row to">
                 <select class="sel"></select>
                 <div class="icons">
-                  <!-- <ion-icon id="to" name="volume-medium-outline"></ion-icon>
-                  <ion-icon id="to" name="copy-outline"></ion-icon> -->
+                 
                 </div>
               </li>
             </ul>
-            <!-- <div class="card-icon">
-              <img src="./assets/images/category-4.svg" width="40" height="40" loading="lazy"
-                alt="Hybrid Distance Programs" class="img">
-            </div>
-
-            <h3 class="h3">
-              <a href="#" class="card-title">Hybrid Distance Programs</a>
-            </h3>
-
-            <p class="card-text">
-              Lorem ipsum dolor consec tur elit adicing sed umod tempor.
-            </p>
-
-            <span class="card-badge">8 Courses</span> -->
-
+            
           </div>
           <style>
             .transl {
@@ -448,19 +298,11 @@
               <h2 class="message"></h2>
               <span class="h2">Translated Text</span>
             </div>
-            <!-- <div class="card-icon">
-              <img src="—Pngtree—upload cloud vector icon_3876265.png" width="40" height="40" loading="lazy"
-                alt="Non-Degree Programs" class="img">
-            </div> -->
-
+ 
             <div class="ocr2">
-              <!-- <h1>Image And PDF OCR Tool</h1>
-              <h2 class="message"></h2>
-              <span>Select a File</span> -->
-              <!-- <input type="file" class="file">
-              <button class="btn1"><strong>Perform OCR</strong></button>
-              <span>Result Text</span> -->
-              <textarea class="to-text"></textarea>
+          <textarea class="to-text" style="font-family: 'Comic Sans MS', cursive; color: black; background-color: white; font-size: large;"
+                  class="w-11/12 md:h-2/3 m-2 p-2 border-blue-900 rounded-lg border self-center justify-center"
+                  name="data" id="data" cols="30" rows="10" placeholder="Translated text will display here.." required="required"></textarea>
           </div>
           <script>
               const languages = {
@@ -619,10 +461,6 @@
               <img src="about-banner.jpg" width="520" height="370" loading="lazy" alt="about banner"
                 class="img-cover">
             </div>
-
-            <!-- <img src="./assets/images/about-shape-1.svg" width="360" height="420" loading="lazy" alt=""
-              class="shape about-shape-1"> -->
-
             <img src="about-shape-2.svg" width="371" height="220" loading="lazy" alt=""
               class="shape about-shape-2">
 
@@ -674,14 +512,6 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #COURSE
-      -->
-
       <section class="section course" id="courses" aria-label="course">
         <div class="container">
 
@@ -698,14 +528,7 @@
                   <img src="course-1.jpg" width="370" height="220" loading="lazy"
                     alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
                 </figure>
-
-                <!-- <div class="abs-badge">
-                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                 <span class="span">3 Weeks</span> -->
-                <!-- </div> -->
-
-                <div class="card-content">
+            <div class="card-content">
 
                   <span class="badge">Beginner</span>
 
@@ -757,14 +580,7 @@
                   <img src="course-2.jpg" width="370" height="220" loading="lazy"
                     alt="Java Programming Masterclass for Software Developers" class="img-cover">
                 </figure>
-
-                <!-- <div class="abs-badge">
-                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                  <span class="span">8 Weeks</span>
-                </div> -->
-
-                <div class="card-content">
+          <div class="card-content">
 
                   <span class="badge">Intermediate</span>
 
@@ -816,12 +632,6 @@
                   <img src="course-3.jpg" width="370" height="220" loading="lazy"
                     alt="The Complete Camtasia Course for Content Creators" class="img-cover">
                 </figure>
-
-                <!-- <div class="abs-badge">
-                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon> -->
-
-                  <!-- <span class="span">3 Weeks</span> -->
-                <!-- </div> -->
 
                 <div class="card-content">
 
@@ -891,25 +701,6 @@
         style="background-image: url('video-bg.png')">
         <div class="container">
 
-          <!-- <div class="video-card">
-
-            <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
-              <img src="./assets/images/video-banner.jpg" width="970" height="550" loading="lazy" alt="video banner"
-                class="img-cover">
-
-              <button class="play-btn" aria-label="play video">
-                <ion-icon name="play" aria-hidden="true"></ion-icon>
-              </button>
-            </div>
-
-            <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
-              class="shape video-shape-1">
-
-            <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
-              class="shape video-shape-2">
-
-          </div> -->
-
         </div>
       </section>
 
@@ -934,14 +725,6 @@
               </div>
             </li>
 
-            <!-- <li>
-              <div class="stats-card" style="--color: 351, 83%, 61%">
-                <h3 class="card-title">32.4K</h3>
-
-                <p class="card-text">Class Completed</p>
-              </div>
-            </li> -->
-
             <li>
               <div class="stats-card" style="--color: 260, 100%, 67%">
                 <h3 class="card-title">100%</h3>
@@ -950,179 +733,12 @@
               </div>
             </li>
 
-            <!-- <li>
-              <div class="stats-card" style="--color: 42, 94%, 55%">
-                <h3 class="card-title">354+</h3>
-
-                <p class="card-text">Top Instructors</p>
-              </div>
-            </li> -->
-
           </ul>
 
         </div>
       </section>
 
 
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <!-- <section class="section blog has-bg-image" id="blog" aria-label="blog"
-        style="background-image: url('./assets/images/blog-bg.svg')">
-        <div class="container">
-
-          <p class="section-subtitle">Latest Articles</p>
-
-          <h2 class="h2 section-title">Get News With Eduweb</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="./assets/images/blog-1.jpg" width="370" height="370" loading="lazy"
-                    alt="Become A Better Blogger: Content Planning" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                  <a href="#" class="card-subtitle">Online</a>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
-                  </h3>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Com 09</span>
-                    </li>
-
-                  </ul>
-
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="./assets/images/blog-2.jpg" width="370" height="370" loading="lazy"
-                    alt="Become A Better Blogger: Content Planning" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                  <a href="#" class="card-subtitle">Online</a>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
-                  </h3>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Com 09</span>
-                    </li>
-
-                  </ul>
-
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="./assets/images/blog-3.jpg" width="370" height="370" loading="lazy"
-                    alt="Become A Better Blogger: Content Planning" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                  <a href="#" class="card-subtitle">Online</a>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
-                  </h3>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Com 09</span>
-                    </li>
-
-                  </ul>
-
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <img src="./assets/images/blog-shape.png" width="186" height="186" loading="lazy" alt=""
-            class="shape blog-shape">
-
-        </div>
-      </section> -->
 
     </article>
   </main>
@@ -1244,12 +860,11 @@
 
           <form action="" class="newsletter-form">
             <input type="email" name="email_address" placeholder="Your email" required class="input-field">
-
-            <button type="submit" class="btn has-before" href="https://karangulve4342.github.io/karan_sih2.github.io/">
-              <span class="span" href="https://karangulve4342.github.io/karan_sih2.github.io/">Premium</span>
-
+            <a  class="btn has-before" href="https://karangulve4342.github.io/HahItOutz_page2/">
+              <span class="span" >Premium</span>
+    
               <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </button>
+            </a>
           </form>
 
           <ul class="social-list">
@@ -1295,7 +910,7 @@
       <div class="container">
 
         <p class="copyright">
-          Copyright 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+          Copyright 2023 All Rights Reserved by <a href="#" class="copyright-link">Team </a> ❤ <a href="#" class="copyright-link">HashItOutz</a>
         </p>
 
       </div>
